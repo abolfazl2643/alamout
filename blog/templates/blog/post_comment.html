@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    {% for posts in  Post %}
+      {{posts.title}} <br>
+      {{posts.article}} <br>
+      
+          {% for comment in posts.comments.all %}
+           ## {{comment.author}} <br>
+            {{comment.massage}} <br> 
+          {% endfor %}
+    ----------------------------------------------------------------- <br> 
+    <br>          
+    {% endfor %}
+
+{% endblock %}

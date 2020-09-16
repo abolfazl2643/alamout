@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<br>
+<br>
+    <div class="container">
+        <form method="POST" >
+            {% csrf_token %}
+            {{form | crispy}}
+            <h1>You have successfully loged out!!</h1>
+        </form>
+    </div>
+
+{% endblock content %}

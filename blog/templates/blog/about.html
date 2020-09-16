@@ -1,0 +1,65 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<style>
+.paddingTB60 {padding:60px 0px 60px 0px;}
+.gray-bg {background: #F1F1F1 !important;}
+.about-title {}
+.about-title h1 {color: #535353; font-size:45px;font-weight:600;}
+.about-title span {color: #AF0808; font-size:45px;font-weight:700;}
+.about-title h3 {color: #535353; font-size:23px;margin-bottom:24px;}
+.about-title p {color: #7a7a7a;line-height: 1.8;margin: 0 0 15px;}
+.about-paddingB {padding-bottom: 12px;}
+.about-img {padding-left: 57px;}
+
+/* Social Icons */
+.about-icons {margin:48px 0px 48px 0px ;}
+.about-icons i{margin-right: 10px;padding: 0px; font-size:35px;color:#323232;box-shadow: 0 0 3px rgba(0, 0, 0, .2);}
+.about-icons li {margin:0px;padding:0;display:inline-block;}
+#social-fb:hover {color: #3B5998;transition:all .001s;}
+ #social-tw:hover {color: #4099FF;transition:all .001s;}
+ #social-gp:hover {color: #d34836;transition:all .001s;}
+ #social-em:hover {color: #f39c12;transition:all .001s;}
+</style>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="about-section paddingTB60 gray-bg">
+                <div class="container">
+                    <div class="row">
+						<div class="col-md-7 col-sm-6">
+							<div class="about-title clearfix">
+								<h1>About <span>US</span></h1>
+								<h3>Django (web framework) </h3>
+								<p class="about-paddingB">Django was created in the fall of 2003, when the web programmers at the Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison, began using Python to build applications. Jacob Kaplan-Moss was hired early in Django's development shortly before Simon Willison's internship ended.[15] It was released publicly under a BSD license in July 2005. The framework was named after guitarist Django Reinhardt.[16]
+
+In June 2008, it was announced that a newly formed Django Software Foundation (DSF) would maintain Django in the future. </p>
+								<p>Django's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and "pluggability" of components, less code, low coupling, rapid development, and the principle of don't repeat yourself.[7] Python is used throughout, even for settings files and data models. Django also provides an optional administrative create, read, update and delete interface that is generated dynamically through introspection and configured via admin models.</p>
+						<div class="about-icons"> 
+                            <ul >
+                                <li><a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a> </li>
+                                <li><a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a> </li>
+                                <li> <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a> </li>
+                                <li> <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a> </li>
+                            </ul>       
+               
+               
+	           
+	           
+	        
+	        </div>
+							</div>
+						</div>
+						<div class="col-md-5 col-sm-6">
+							<div class="about-img">
+								<img src="https://devitems.com/preview/appmom/img/mobile/2.png" alt="">
+							</div>
+						</div>	
+                    </div>
+                </div>
+            </div>
+
+
+{% endblock content %}
+

@@ -1,0 +1,6 @@
+<form method="get" action="{% url 'searchview' %}">
+    {% csrf_token %}
+        <input type="text" name = "a">
+        <input type="submit"value="Search"/>
+    
+</form>

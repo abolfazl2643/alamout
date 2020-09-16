@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>   
+<div class="container">
+    
+
+    {{user.username}} <br>
+    {{user.email}}  <br>
+    {% if  user.image.img %}
+      
+    
+        <img src="{{user.image.img.url}}" alt="myprofilephoto"><br>
+
+    {% endif %}
+
+    
+            
+
+      
+
+</div>   
+{% endblock content %}
+
