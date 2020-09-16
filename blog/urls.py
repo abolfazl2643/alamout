@@ -17,7 +17,7 @@ urlpatterns = [
     path('form/<int:pk>', require_POST(Comment_Form_View.as_view()), name='comment_form'),
     path('post1/<int:pk>', Limited_PostDetail_User_View.as_view(), name='detail1'),
     path('about/',TemplateView.as_view(template_name = 'blog/about.html'),name = 'about'),
-    path('search/',TemplateView.as_view(template_name = 'blog/search.html'),name = 'search'),
+    path('search/',TemplateView.as_view(template_name = 'blog/search.html'),name = 'searchh'),
     path('searchview',search,name='searchview'),
  
 ]

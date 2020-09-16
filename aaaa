@@ -1,0 +1,19 @@
+[1mdiff --git a/blog/__pycache__/form.cpython-38.pyc b/blog/__pycache__/form.cpython-38.pyc[m
+[1mindex 2f98533..7cb730f 100644[m
+Binary files a/blog/__pycache__/form.cpython-38.pyc and b/blog/__pycache__/form.cpython-38.pyc differ
+[1mdiff --git a/blog/__pycache__/urls.cpython-38.pyc b/blog/__pycache__/urls.cpython-38.pyc[m
+[1mindex d29cd37..1ef46db 100644[m
+Binary files a/blog/__pycache__/urls.cpython-38.pyc and b/blog/__pycache__/urls.cpython-38.pyc differ
+[1mdiff --git a/blog/urls.py b/blog/urls.py[m
+[1mindex 7eb6988..4463b2a 100644[m
+[1m--- a/blog/urls.py[m
+[1m+++ b/blog/urls.py[m
+[36m@@ -17,7 +17,7 @@[m [murlpatterns = [[m
+     path('form/<int:pk>', require_POST(Comment_Form_View.as_view()), name='comment_form'),[m
+     path('post1/<int:pk>', Limited_PostDetail_User_View.as_view(), name='detail1'),[m
+     path('about/',TemplateView.as_view(template_name = 'blog/about.html'),name = 'about'),[m
+[31m-    path('search/',TemplateView.as_view(template_name = 'blog/search.html'),name = 'search'),[m
+[32m+[m[32m    path('search/',TemplateView.as_view(template_name = 'blog/search.html'),name = 'searchh'),[m
+     path('searchview',search,name='searchview'),[m
+  [m
+ ][m
