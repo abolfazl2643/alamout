@@ -27,6 +27,8 @@ def user_creation_view(request):
             user = authenticate(username = username,password = password )
             login(request,user)
             return redirect('post_list')
+        else :
+            return form   
     else:
         form = User_Creation_Form()
     return render(request,'users/user_creation_form.html',{'form':form})            
