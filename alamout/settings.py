@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'blog',
     'users',
     'django.contrib.admin',
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django.contrib.sitemaps',
     'taggit',
+    'apiapp',
+
 
 ]
 
@@ -84,11 +87,12 @@ WSGI_APPLICATION = 'alamout.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Demo',
+        'NAME': 'abolfazl',
         'USER':'postgres',
-        'PASSWORD':'26432643',
+        'PASSWORD':'2643',
         'HOST':'localhost',
-        'PORT':'5432',
+        'PORT':'5433',
+
     }
 }
 
